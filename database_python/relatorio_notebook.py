@@ -343,7 +343,7 @@ def comparar_residencias(r9, cobertura):
     ajustes=ajustes.sort_values('padronizada_pp')
     detalhes(ajustes.round(2), 'Padronização e cobertura do suporte comum')
     ausentes=sorted(set(cobertura.codigo)-set(ajustes.codigo))
-    print('Países sem suporte comum suficiente:', ', '.join(ausentes) or 'nenhum')
+    print('Países com poucas respostas para esta comparação:', ', '.join(ausentes) or 'nenhum')
     fig,ax=plt.subplots(figsize=(11,max(7,len(ajustes)*.28)))
     y=np.arange(len(ajustes))
     ax.hlines(y,ajustes.bruta_pp,ajustes.padronizada_pp,color='#a0b0bc')
@@ -354,7 +354,7 @@ def comparar_residencias(r9, cobertura):
     ax.legend(loc='best'); ax.grid(axis='x',alpha=.2); fig.tight_layout(); display(fig); plt.close(fig)
     inversoes=ajustes[ajustes.inversao]
     maiores=ajustes.assign(mudanca=(ajustes.bruta_pp-ajustes.padronizada_pp).abs()).nlargest(3,'mudanca')
-    display(Markdown(f"**Resultado:** {len(ajustes)} países com suporte comum; uso urbano maior após o ajuste em {int((ajustes.padronizada_pp > 0).sum())}; {len(inversoes)} inversões de sinal. Maiores mudanças: {', '.join(maiores.pais)}."))
+    display(Markdown(f"Foi possível comparar {len(ajustes)} países. Após considerar riqueza e escolaridade, o uso de contraceptivos foi maior na área urbana em {int((ajustes.padronizada_pp > 0).sum())} deles. Em {len(inversoes)}, a diferença mudou de sentido. As maiores mudanças ocorreram em {', '.join(maiores.pais)}."))
     return ajustes
 
 
@@ -379,7 +379,7 @@ def verificar_sensibilidade(r9):
     ax.set(xlabel='Mínimo de respostas por área/estrato',ylabel='Países',title='Sensibilidade do suporte comum'); mostrar(fig)
     detalhes(sensibilidade.round(2), 'Sensibilidade por país e limiar')
     persistentes=sensibilidade.groupby('pais').filter(lambda g: len(g)==3 and g.inversao.all()).pais.unique()
-    display(Markdown('**Sensibilidade:** inversão nos três limiares em ' + (', '.join(sorted(persistentes)) or 'nenhum país') + '. Os estratos incluídos mudam com o limiar.'))
+    display(Markdown('Ao repetir a comparação com pelo menos 30, 50 e 100 respostas em cada grupo, a inversão permaneceu em ' + (', '.join(sorted(persistentes)) or 'nenhum país') + '. Os grupos comparados variam conforme esse mínimo.'))
     return sensibilidade
 
 
@@ -407,7 +407,7 @@ def comparar_prenatal(r10, cobertura):
     coverage=prenatal.groupby('nome')[['n_validos','nascimentos_recentes']].sum()
     coverage['cobertura_pct']=100*coverage.n_validos/coverage.nascimentos_recentes
     display(HTML('<details><summary>Completude do pré-natal</summary>'+coverage.reset_index().round(2).to_html(index=False)+'</details>')) if 'HTML' in globals() else None
-    display(Markdown(f"**Resultado:** pré-natal ≥4 maior no quintil mais rico em {int((gradiente.diferenca_pp > 0).sum())} de {len(gradiente)} países com respostas suficientes; diferença de {gradiente.diferenca_pp.min():.1f} a {gradiente.diferenca_pp.max():.1f} pontos percentuais."))
+    display(Markdown(f"A proporção de mulheres com quatro ou mais consultas de pré-natal foi maior no grupo mais rico em {int((gradiente.diferenca_pp > 0).sum())} de {len(gradiente)} países com respostas suficientes. A diferença para o grupo mais pobre variou de {gradiente.diferenca_pp.min():.1f} a {gradiente.diferenca_pp.max():.1f} pontos percentuais."))
     return prenatal
 
 
