@@ -1,0 +1,106 @@
+﻿codigo,nome,minimo_por_faixa,menor_celula,incluido,limiar
+AO,Angola,30,22.0,False,30
+BF,Burkina Faso,30,10.0,False,30
+BJ,Benin,30,8.0,False,30
+BU,Burundi,30,3.0,False,30
+CD,Congo (República Democrática),30,48.0,True,30
+CG,Congo (Brazzaville),30,11.0,False,30
+CI,Costa do Marfim,30,23.0,False,30
+CM,Camarões,30,38.0,True,30
+ET,Etiópia,30,4.0,False,30
+GA,Gabão,30,14.0,False,30
+GH,Gana,30,24.0,False,30
+GM,Gâmbia,30,58.0,True,30
+GN,Guiné,30,2.0,False,30
+KE,Quênia,30,60.0,True,30
+KM,Comores,30,26.0,False,30
+LB,Libéria,30,35.0,True,30
+LS,Lesoto,30,0.0,False,30
+MD,Madagascar,30,25.0,False,30
+ML,Mali,30,18.0,False,30
+MW,Malaui,30,23.0,False,30
+MZ,Moçambique,30,6.0,False,30
+NG,Nigéria,30,143.0,True,30
+NI,Níger,30,2.0,False,30
+NM,Namíbia,30,7.0,False,30
+RW,Ruanda,30,10.0,False,30
+SL,Serra Leoa,30,30.0,True,30
+SN,Senegal,30,12.0,False,30
+ST,São Tomé e Príncipe,30,0.0,False,30
+SZ,Eswatini (Suazilândia),30,12.0,False,30
+TD,Chade,30,9.0,False,30
+TG,Togo,30,24.0,False,30
+TZ,Tanzânia,30,11.0,False,30
+ZA,África do Sul,30,1.0,False,30
+ZM,Zâmbia,30,10.0,False,30
+ZW,Zimbábue,30,1.0,False,30
+AO,Angola,50,22.0,False,50
+BF,Burkina Faso,50,10.0,False,50
+BJ,Benin,50,8.0,False,50
+BU,Burundi,50,3.0,False,50
+CD,Congo (República Democrática),50,48.0,False,50
+CG,Congo (Brazzaville),50,11.0,False,50
+CI,Costa do Marfim,50,23.0,False,50
+CM,Camarões,50,38.0,False,50
+ET,Etiópia,50,4.0,False,50
+GA,Gabão,50,14.0,False,50
+GH,Gana,50,24.0,False,50
+GM,Gâmbia,50,58.0,True,50
+GN,Guiné,50,2.0,False,50
+KE,Quênia,50,60.0,True,50
+KM,Comores,50,26.0,False,50
+LB,Libéria,50,35.0,False,50
+LS,Lesoto,50,0.0,False,50
+MD,Madagascar,50,25.0,False,50
+ML,Mali,50,18.0,False,50
+MW,Malaui,50,23.0,False,50
+MZ,Moçambique,50,6.0,False,50
+NG,Nigéria,50,143.0,True,50
+NI,Níger,50,2.0,False,50
+NM,Namíbia,50,7.0,False,50
+RW,Ruanda,50,10.0,False,50
+SL,Serra Leoa,50,30.0,False,50
+SN,Senegal,50,12.0,False,50
+ST,São Tomé e Príncipe,50,0.0,False,50
+SZ,Eswatini (Suazilândia),50,12.0,False,50
+TD,Chade,50,9.0,False,50
+TG,Togo,50,24.0,False,50
+TZ,Tanzânia,50,11.0,False,50
+ZA,África do Sul,50,1.0,False,50
+ZM,Zâmbia,50,10.0,False,50
+ZW,Zimbábue,50,1.0,False,50
+AO,Angola,100,22.0,False,100
+BF,Burkina Faso,100,10.0,False,100
+BJ,Benin,100,8.0,False,100
+BU,Burundi,100,3.0,False,100
+CD,Congo (República Democrática),100,48.0,False,100
+CG,Congo (Brazzaville),100,11.0,False,100
+CI,Costa do Marfim,100,23.0,False,100
+CM,Camarões,100,38.0,False,100
+ET,Etiópia,100,4.0,False,100
+GA,Gabão,100,14.0,False,100
+GH,Gana,100,24.0,False,100
+GM,Gâmbia,100,58.0,False,100
+GN,Guiné,100,2.0,False,100
+KE,Quênia,100,60.0,False,100
+KM,Comores,100,26.0,False,100
+LB,Libéria,100,35.0,False,100
+LS,Lesoto,100,0.0,False,100
+MD,Madagascar,100,25.0,False,100
+ML,Mali,100,18.0,False,100
+MW,Malaui,100,23.0,False,100
+MZ,Moçambique,100,6.0,False,100
+NG,Nigéria,100,143.0,True,100
+NI,Níger,100,2.0,False,100
+NM,Namíbia,100,7.0,False,100
+RW,Ruanda,100,10.0,False,100
+SL,Serra Leoa,100,30.0,False,100
+SN,Senegal,100,12.0,False,100
+ST,São Tomé e Príncipe,100,0.0,False,100
+SZ,Eswatini (Suazilândia),100,12.0,False,100
+TD,Chade,100,9.0,False,100
+TG,Togo,100,24.0,False,100
+TZ,Tanzânia,100,11.0,False,100
+ZA,África do Sul,100,1.0,False,100
+ZM,Zâmbia,100,10.0,False,100
+ZW,Zimbábue,100,1.0,False,100

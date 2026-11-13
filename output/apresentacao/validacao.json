@@ -1,0 +1,21 @@
+{
+  "banco": "saude_mulher_partos.db",
+  "sha256": "7544c1fc84260542f7bdd50c92a1cf35e74799436688eb3e24e0added7e19364",
+  "mulheres_recorte_25_39": 209993,
+  "paises_com_riqueza_escolaridade_validas": 35,
+  "paises_com_quatro_perfis_comparaveis": 7,
+  "perfis_menor_riqueza_escolarizada_acima_maior_riqueza_sem": 7,
+  "paises_prenatal_comparavel": 33,
+  "mais_rico_acima_mais_pobre": 33,
+  "paises_cesarea_comparavel": 26,
+  "cesarea_urbano_acima_rural": 26,
+  "avisos": [
+    "Análise exploratória; os grupos não foram aleatorizados.",
+    "Sem intervalos de confiança ou testes que incorporem estratos e conglomerados DHS.",
+    "Contracepção padronizada apenas por idade, não por residência, união, paridade ou intenção reprodutiva.",
+    "Não uso contraceptivo não equivale a necessidade não atendida ou falta de autonomia.",
+    "Não comparar diretamente os percentuais de contracepção com os de cuidado materno: os denominadores diferem.",
+    "O pré-natal e as cesáreas foram recalculados no modelo de partos, com idade 15–49 e ponderação.",
+    "Anos dos levantamentos variam; não são estimativas contemporâneas para toda a região."
+  ]
+}

@@ -1,0 +1,36 @@
+﻿codigo,nome,minimo_por_faixa,menor_celula,incluido
+AO,Angola,30,22.0,False
+BF,Burkina Faso,30,10.0,False
+BJ,Benin,30,8.0,False
+BU,Burundi,30,3.0,False
+CD,Congo (República Democrática),30,48.0,True
+CG,Congo (Brazzaville),30,11.0,False
+CI,Costa do Marfim,30,23.0,False
+CM,Camarões,30,38.0,True
+ET,Etiópia,30,4.0,False
+GA,Gabão,30,14.0,False
+GH,Gana,30,24.0,False
+GM,Gâmbia,30,58.0,True
+GN,Guiné,30,2.0,False
+KE,Quênia,30,60.0,True
+KM,Comores,30,26.0,False
+LB,Libéria,30,35.0,True
+LS,Lesoto,30,0.0,False
+MD,Madagascar,30,25.0,False
+ML,Mali,30,18.0,False
+MW,Malaui,30,23.0,False
+MZ,Moçambique,30,6.0,False
+NG,Nigéria,30,143.0,True
+NI,Níger,30,2.0,False
+NM,Namíbia,30,7.0,False
+RW,Ruanda,30,10.0,False
+SL,Serra Leoa,30,30.0,True
+SN,Senegal,30,12.0,False
+ST,São Tomé e Príncipe,30,0.0,False
+SZ,Eswatini (Suazilândia),30,12.0,False
+TD,Chade,30,9.0,False
+TG,Togo,30,24.0,False
+TZ,Tanzânia,30,11.0,False
+ZA,África do Sul,30,1.0,False
+ZM,Zâmbia,30,10.0,False
+ZW,Zimbábue,30,1.0,False

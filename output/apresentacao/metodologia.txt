@@ -1,0 +1,49 @@
+GRÁFICOS PARA A APRESENTAÇÃO — SAÚDE DA MULHER NA ÁFRICA SUBSAARIANA
+
+Fonte: saude_mulher_partos.db, derivado dos levantamentos DHS do projeto.
+Reprodução: python output/apresentacao/gerar_graficos.py
+Leitura do banco em modo somente leitura; hash SHA-256 registrado em validacao.json.
+
+SLIDE 7 — ESCOLARIDADE, RIQUEZA E CONTRACEPÇÃO
+População: mulheres de 25 a 39 anos com resposta contraceptiva válida, peso positivo,
+riqueza 1–5 e escolaridade 0–3; uma coorte temática por país.
+Menor riqueza: quintis 1–2. Maior riqueza: quintis 4–5. Quintil 3 excluído dos
+perfis contrastados, mas incluído na população etária de referência do país.
+Escolaridade: nenhuma (0) versus secundário/superior (2–3). Primário não integra
+os perfis, mas integra a população de referência.
+Faixas: 25–29, 30–34 e 35–39. Cada um dos quatro perfis deve ter pelo menos
+30 respostas em cada faixa. A mesma distribuição ponderada de idade de todas
+as mulheres elegíveis do país é aplicada aos quatro perfis.
+Fórmula: taxa padronizada do perfil = soma_faixas(proporção_etária_referência *
+soma(peso*uso)_perfil,faixa / soma(peso)_perfil,faixa) * 100.
+Não foram ajustadas outras características. A restrição etária permite observar
+mulheres com mais tempo para completar escolarização; não elimina confundimento.
+Os países excluídos e os limiares alternativos de 50/100 estão nos CSVs de cobertura.
+O resultado para os sete países elegíveis não pode ser generalizado aos 37 países.
+
+SLIDE 8 — PRÉ-NATAL
+Mulheres de 15–49 anos; último parto nos 60 meses anteriores à entrevista,
+identificado pela criança com indice=1. Cada mulher entra uma vez.
+≥4 consultas é o indicador adotado pelo projeto; códigos 0–90 válidos, 4–90 no numerador.
+Percentuais ponderados; pelo menos 30 respostas por quintil para exibição.
+Não é uma medida de adequação clínica atual nem de qualidade do cuidado.
+Exemplos apresentados: Zâmbia (pequena diferença, patamar elevado), Burundi
+(pequena diferença, patamar mais baixo) e Angola (grande diferença). Os demais
+países constam no CSV completo. As datas são diferentes e estão nos rótulos;
+os exemplos não constituem comparação contemporânea nem ranking de políticas.
+
+SLIDE 9 — CESÁREAS
+Mesmo recorte de último parto, idade e peso; inclui residências válidas mesmo sem
+informação de riqueza. Cesarea_codigo=1 no numerador; códigos 0/1 no denominador.
+Percentuais ponderados, pelo menos 30 respostas por área e sem padronização etária.
+Conflitos de atributos do parto detectados na migração ficam NULL e são excluídos
+do denominador correspondente. Países escolhidos para ilustrar diferentes níveis:
+Angola, Ruanda e Lesoto, com levantamentos de 2023–2025. Não constituem ranking.
+
+LEITURA DOS RESULTADOS
+Associações descritivas, sem demonstração de causalidade ou significância estatística.
+Não uso contraceptivo não significa falta de acesso, autonomia ou necessidade não
+atendida: não foram avaliados intenção reprodutiva, união ou atividade sexual.
+Cesáreas mais ou menos frequentes não demonstram isoladamente melhor/pior cuidado.
+Períodos e denominadores são próprios de cada comparação; nunca somar pesos dos
+países para inferir uma prevalência da África Subsaariana.
